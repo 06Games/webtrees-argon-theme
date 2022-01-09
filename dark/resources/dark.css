@@ -1,0 +1,271 @@
+:root {
+  --text: #ccc;
+  --text-small: #888;
+
+  --selectable: #33363e;
+  --selectable-hover: #3d4048;
+  --selectable-disabled: #2b2e35;
+
+  --tint: #30363e;
+  --tint-light: #36414f;
+
+  /* Tree */
+  /*--sex-m-bg: #235789;*/
+  --sex-m-bg: #598cb9;
+  /*--sex-f-bg: #9c6d87;*/
+  --sex-f-bg: #d08ab1;
+  --sex-u-bg: #6d6d6d;
+
+  /* Bootstrap */
+  --primary: #154f99;
+  --secondary: #3b3b40;
+  --light: #545a60;
+}
+
+body {
+  background-color: #28282a;
+  color: var(--text);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text);
+}
+
+hr{
+  border-top-color: var(--selectable-hover);
+}
+
+.table {
+  color: #c4c4c4;
+}
+.table th,
+table th {
+  background: var(--tint);
+}
+.table-bordered,
+.table-bordered td,
+.table-bordered th,
+.table tr:first-child td,
+.table tr:first-child th,
+table tr:first-child td,
+table tr:first-child th,
+.table thead th,
+table thead th,
+.table-bordered tbody td,
+.table-bordered tbody th,
+.table-bordered td,
+.table-bordered th,
+.table-bordered thead th,
+.table tbody th,
+.table td,
+table tbody td,
+table tbody th,
+table td,
+.table tbody td,
+.table tbody th,
+.table td,
+table tbody td,
+table tbody th,
+table td {
+  border-color: var(--tint-light);
+}
+
+@media (max-width: 991.8px){
+  .wt-header-content .navbar-collapse.collapsing,
+  .wt-header-content .navbar-collapse.show{
+    border-color: var(--selectable-hover);
+    background-color: var(--selectable);
+  }
+}
+.form-control,
+.select2-container .select2-selection--single,
+.select2-dropdown .select2-search__field,
+input[type="text"],
+.select2-dropdown,
+.dropdown-menu,
+.navbar-nav .dropdown-menu::before,
+.navbar-nav .fan_chart_menu::before,
+.navbar-nav .twitter-typeahead .tt-dropdown-menu::before,
+.navbar-nav .twitter-typeahead .tt-menu::before,
+.fan_chart_menu,
+.twitter-typeahead .tt-dropdown-menu,
+.twitter-typeahead .tt-menu,
+.twitter-typeahead .navbar-nav .tt-dropdown-menu::before,
+.twitter-typeahead .navbar-nav .tt-menu::before,
+.custom-select,
+select,
+.card,
+.img-thumbnail {
+  border-color: var(--selectable-hover);
+  background-color: var(--selectable);
+}
+.form-control:focus,
+.select2-container .select2-selection--single:focus,
+.select2-dropdown .select2-search__field:focus,
+input:focus[type="text"] {
+  background-color: var(--selectable-hover);
+}
+.form-control:disabled,
+.form-control[readonly],
+.select2-container .select2-selection--single:disabled,
+.select2-container .select2-selection--single[readonly],
+.select2-dropdown .select2-search__field:disabled,
+.select2-dropdown .select2-search__field[readonly],
+.custom-select,
+select,
+input:disabled[type="text"],
+input[readonly][type="text"] {
+  background-color: var(--selectable-disabled);
+}
+.dropdown-item-text,
+.form-control::placeholder {
+  color: var(--text-small);
+}
+.dropdown-item,
+.select2-dropdown .select2-results ul.select2-results__options li:not(.loading-results):not([role="alert"]),
+.twitter-typeahead .tt-dropdown-menu .tt-dataset .tt-suggestion,
+.twitter-typeahead .tt-menu .tt-dataset .tt-suggestion {
+  color: var(--text);
+}
+.navbar-nav .nav-link{
+  color: var(--text) im !important;
+}
+.dropdown-item:focus,
+.dropdown-item:hover,
+.select2-dropdown .select2-results ul.select2-results__options li:focus:not(.loading-results):not([role="alert"]),
+.select2-dropdown .select2-results ul.select2-results__options li:hover:not(.loading-results):not([role="alert"]),
+.twitter-typeahead .tt-dropdown-menu .tt-dataset .tt-suggestion.tt-cursor,
+.twitter-typeahead .tt-dropdown-menu .tt-dataset .tt-suggestion:focus,
+.twitter-typeahead .tt-dropdown-menu .tt-dataset .tt-suggestion:hover,
+.twitter-typeahead .tt-menu .tt-dataset .tt-suggestion.tt-cursor,
+.twitter-typeahead .tt-menu .tt-dataset .tt-suggestion:focus,
+.twitter-typeahead .tt-menu .tt-dataset .tt-suggestion:hover {
+  color: var(--text);
+  background-color: var(--selectable-hover);
+}
+
+a,
+a:hover {
+  color: #bcd;
+}
+.nav-link {
+  color: #bcd;
+}
+.text-muted {
+  color: #9aa5b3 !important;
+}
+.btn {
+  color: var(--text);
+}
+.btn:hover {
+  color: white;
+}
+.btn-primary,
+.btn-primary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.nav-pills .nav-link,
+.btn-secondary,
+.btn-secondary:hover {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+.btn-light,
+.btn-light:hover {
+  background-color: var(--light);
+  border-color: var(--light);
+}
+.btn-outline-secondary {
+  border-color: var(--tint-light);
+}
+.btn-outline-secondary:hover {
+  background-color: var(--tint-light);
+  border-color: var(--tint-light);
+  color: var(--text);
+}
+.btn-link {
+  color: #48c;
+}
+
+.page-link,
+.paginate_button.next a::after,
+.paginate_button.previous a::after {
+  color: var(--text);
+  background-color: var(--selectable);
+  border-color: var(--selectable);
+}
+.page-item.disabled .page-link,
+.page-item.disabled .paginate_button.next a::after,
+.page-item.disabled .paginate_button.previous a::after,
+.paginate_button.next .page-item.disabled a::after,
+.paginate_button.previous .page-item.disabled a::after {
+  color: var(--text);
+  background-color: var(--selectable-disabled);
+  border-color: var(--selectable-disabled);
+}
+
+.icon-pedigree,
+.icon-indis {
+  filter: invert();
+}
+
+/**************************************
+                  Tree
+ **************************************/
+
+.wt-chart-pedigree .wt-chart-box {
+  color: white;
+}
+.wt-chart-pedigree .wt-chart-box a,
+.wt-chart-pedigree .wt-chart-box a:hover {
+  color: azure;
+}
+.wt-chart .wt-chart-box-m,
+.wt-family-members .wt-chart-box-m,
+.wt-gender-M {
+  background-color: var(--sex-m-bg);
+}
+.wt-chart .wt-chart-box-f,
+.wt-family-members .wt-chart-box-f,
+.wt-gender-F {
+  background-color: var(--sex-f-bg);
+}
+.wt-chart .wt-chart-box-u,
+.wt-family-members .wt-chart-box-u,
+.wt-gender-U {
+  background-color: var(--sex-u-bg);
+}
+
+#webtrees-pedigree-chart-container .person > rect {
+  fill-opacity: 1;
+  fill: var(--sex-u-bg);
+  stroke: none !important;
+}
+#webtrees-pedigree-chart-container .person > rect.male {
+  fill: var(--sex-m-bg);
+}
+#webtrees-pedigree-chart-container .person > rect.female {
+  fill: var(--sex-f-bg);
+}
+#webtrees-pedigree-chart-container .person .image > rect {
+  fill: var(--selectable);
+  stroke: none;
+}
+#webtrees-pedigree-chart-container .person .name {
+  fill: #dfdfdf;
+}
+#webtrees-pedigree-chart-container .person .date {
+  fill: rgb(225, 225, 225);
+}
