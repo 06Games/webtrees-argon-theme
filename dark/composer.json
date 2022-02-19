@@ -1,11 +1,11 @@
 {
-    "name": "evang/mailsystem",
+    "name": "evang/dark-theme",
     "description": "",
     "license": "GPL-3.0-or-later",
     "type": "webtrees-module",
     "keywords": [
         "webtrees",
-        "module"
+        "theme"
     ],
     "authors": [
         {
@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "EvanG\\Modules\\MailSystem\\": ""
+            "EvanG\\Themes\\DarkTheme\\": ""
         }
     },
     "require": {
